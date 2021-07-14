@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 
+/*---------------------- COMMON ----------------------*/
+
+
 /*---------------------- HEADER ----------------------*/
 .container {
     width: 100%;
     height: 100px;
     padding: 0px 20px;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgba(0, 0, 0, 0.39);
     border: 1px solid;
 
     display: flex;
@@ -36,8 +39,36 @@
     font-size: 12px;
 }
 
-/*---------------------- CORPO ----------------------*/
-main {
-    height: 2000px;
+/*---------------------- MAIN ----------------------*/
+.main-box {
+    display: flex;
+
+    height: calc(100vh - 100px);
     background-color: rgb(35, 100, 102);
 }
+.item-main {
+    background-color: rgb(240, 210, 145);
+    padding-top: 120px;
+    padding-left: 20px;
+    color: white;
+}
+.col-left {
+    background-color: rgb(15, 14, 17);
+    width: 300px;
+}
+.col-right {
+    background-color: rgb(26, 31, 41);
+    width: calc(100% - 300px);
+}
+/* ---------------------- FOOTER ---------------------- */
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 0px 20px;
+    background-color: rgb(70, 70, 70);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

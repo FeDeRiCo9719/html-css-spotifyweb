@@ -16,7 +16,6 @@
     height: calc(100vh - 100px);
     padding: 20px 20px;
     background-color: rgb(18, 17, 20);
-    /* background-color: rgb(56, 56, 56); */
 }
 
 .sidebar img {
@@ -27,7 +26,7 @@
 .main-box {
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgb(48, 105, 96),rgb(31, 31, 31));
+    background-image: linear-gradient(to bottom right, rgb(48, 105, 96),rgb(31, 31, 31));
     position: relative;
 }
 .box-upgrade {
@@ -55,9 +54,7 @@ footer {
     width: 100%;
     height: 100px;
     padding: 0px 20px;
-    background-image: linear-gradient(rgb(56, 56, 56),rgb(41, 41, 41));
-    /* background-color: rgb(56, 56, 56); */
-    /* background-color: rgb(18, 17, 20); */
+    background-image: linear-gradient(rgb(82, 82, 82),rgb(61, 61, 61));
 
     display: flex;
     justify-content: space-between;

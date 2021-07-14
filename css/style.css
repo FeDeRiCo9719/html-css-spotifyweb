@@ -4,3 +4,42 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+/*---------------------- HEADER ----------------------*/
+.container {
+    height: 100px;
+    padding: 0px 20px;
+    background-color: rgba(0, 0, 0, 0.726);
+    border: 1px solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.item-header {
+    /* border: 1px solid red; */
+}
+.item-header img {
+    width: 150px;
+}
+.item-header button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+/*---------------------- CORPO ----------------------*/
+main {
+    position: relative;
+    height: 2000px;
+    background-color: rgb(35, 100, 102);
+}

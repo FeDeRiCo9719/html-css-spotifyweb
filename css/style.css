@@ -28,9 +28,14 @@ body {
     cursor: pointer;
 }
 
+h4 {
+    color: white;
+    margin: 10px 0px;
+}
+
 h2 {
     font-size: 30px;
-    margin: 10px 0px;
+    padding: 10px 10px;
     color: white;
 }
 
@@ -41,10 +46,9 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
 
-    border-right: 1px solid grey;
     width: 250px;
-    height: calc(100vh - 100px);
-    padding: 20px 20px;
+    height: calc(100vh - 80px);
+    padding: 0px 20px;
     background-color: rgb(12, 11, 14);
 }
 
@@ -52,8 +56,8 @@ h2 {
     /* border: 1px solid yellow; */
 }
  
-.img-box {
-    margin-bottom: 30px;
+.logo-box {
+    margin: 30px 0px;
     /* border: 1px solid rgb(255, 0, 255); */
 }
 
@@ -65,13 +69,9 @@ h2 {
     margin: 20px 0px;
 }
 
-.img-box img {
+.logo {
+    cursor: pointer;
     width: 150px;
-}
-
-h4 {
-    color: white;
-    margin: 10px 0px;
 }
 
 .playlist {
@@ -92,7 +92,7 @@ h4 {
 /*---------------------- MAIN ----------------------*/
 .main-box {
     width: calc(100% - 250px);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     padding: 0px 20px;
     overflow-y: auto;
     background-image: linear-gradient(to bottom right, rgb(27, 88, 79),rgb(31, 31, 31));
@@ -137,7 +137,7 @@ h4 {
     /* background-color: rgba(216, 202, 191, 0.514); */
 }
 
-.row {
+.Albums {
     width: 100%;
     margin-bottom: 50px;
     /* background-color: rgba(255, 0, 255, 0.267); */
@@ -145,24 +145,32 @@ h4 {
 }
 
 .flex-row {
+    border: 1px solid rgba(255, 50, 50, 0.37);
     display: flex;
     justify-content: space-between;
 }
 
 .item-row {
+    border: 1px solid rgb(133, 231, 133);
+    width: calc(100% / 6);
+    padding: 0px 10px;
     text-align: center;
 }
 
-.item-row img {
-    width: 100%;
-    padding: 20px 0px;
+.box-img-album {
+    border: 1px solid rgb(164, 186, 226);
 }
+
+.box-img-album img {
+    width: 100%;
+    padding-top: 20px;
+}
+
 
 /* ---------------------- FOOTER ---------------------- */
 footer {
-    border-top: 1px solid grey;
     width: 100%;
-    height: 100px;
+    height: 80px;
     /* padding: 0px 20px; */
     background-image: linear-gradient(rgb(64, 68, 78),rgb(39, 45, 51));
 
@@ -172,7 +180,7 @@ footer {
 }
 
 .footer-item {
-    border: 1px solid rgba(255, 123, 0, 0.445);
+    /* border: 1px solid rgba(255, 123, 0, 0.445); */
     height: 100%;
     width: calc(100% / 3);
 }

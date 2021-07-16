@@ -47,22 +47,26 @@ h2 {
     justify-content: space-between;
 
     width: 230px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     padding: 0px 20px;
     background-color: rgb(12, 11, 14);
 }
 
-.item {
-    /* border: 1px solid yellow; */
-}
- 
 .logo-box {
     margin: 30px 0px;
     /* border: 1px solid rgb(255, 0, 255); */
 }
 
-.box-nav {
-    /* border: 1px solid rgb(0, 102, 255); */
+.logo {
+    cursor: pointer;
+    width: 120px;
+}
+
+.box-nav li i {
+    font-size: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+    /* background-color: red; */
 }
 
 .overflow {
@@ -71,17 +75,22 @@ h2 {
 
 .box-nav li {
     margin: 20px 0px;
-}
-
-.logo {
-    cursor: pointer;
-    width: 150px;
+    /* border: 1px solid yellow; */
+    vertical-align: middle;
 }
 
 .playlist {
     /* border: 1px solid red; */
     margin: 40px 0px;
     font-size: 18px;
+}
+
+.playlist i {
+    color: black;
+    font-size: 20px;
+    background-color: grey;
+    padding: 10px;
+    margin-right: 10px;
 }
 
 .user-box {
@@ -96,7 +105,7 @@ h2 {
 /*---------------------- MAIN ----------------------*/
 .main-box {
     width: calc(100% - 230px);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     padding: 0px 20px;
     overflow-y: auto;
     background-image: linear-gradient(to bottom right, rgb(27, 88, 79),rgb(31, 31, 31));
@@ -136,6 +145,7 @@ h2 {
 .main-nav-box li {
     display: inline-block;
     padding: 5px 10px;
+    /* border: 1px solid greenyellow; */
 }
 
 /* ALBUM */
@@ -152,21 +162,23 @@ h2 {
 }
 
 .flex-row {
-    border: 1px solid rgba(255, 50, 50, 0.267);
+    /* border: 1px solid rgba(134, 94, 94, 0.267); */
+    margin-top: 20px;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .item-row {
-    border: 1px solid rgba(133, 231, 133, 0.336);
+    /* border: 1px solid rgba(133, 231, 133, 0.336); */
     width: calc(100% / 6);
     padding: 0px 10px;
     text-align: center;
 }
 
 .box-img-album {
-    border: 1px solid rgba(164, 186, 226, 0.39);
+    /* border: 1px solid rgba(164, 186, 226, 0.39); */
 }
 
 .box-img-album img {
@@ -177,8 +189,8 @@ h2 {
 /* ---------------------- FOOTER ---------------------- */
 footer {
     width: 100%;
-    height: 80px;
-    padding: 0px 20px;
+    height: 100px;
+    padding: 0px 10px;
     background-image: linear-gradient(rgb(64, 68, 78),rgb(39, 45, 51));
 
     display: flex;
@@ -194,40 +206,89 @@ footer h5 {
 
 /* ITEM FOOTER */
 .central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     flex-basis: 40%;
+    /* border: 1px solid rgba(255, 123, 0, 0.445); */
+    height: 100%;
 }
 .side {
-    flex-basis: 10%;
-}
+    flex-basis: 200px;
+    /* border: 1px solid rgba(255, 123, 0, 0.445); */
+    height: 100%;
 
-.footer-item {
     display: flex;
     align-items: center;
-
-    border: 1px solid rgba(255, 123, 0, 0.445);
-    height: 100%;
-    /* padding: 0px 10px; */
+    justify-content: space-between;
 }
 
 /* LEFT SIDE */
-/* .side-item {
-    flex-basis: calc(100% / 3);
-    border: 1px solid rgba(0, 255, 21, 0.445);
-    height: 80%;
-} */
-
-/* .box-brano {
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(225, 0, 255, 0.445);
-    height: 80%;
-} */
-
-.brano-item{
-    height: 70%;
-    border: 1px solid rgba(0, 110, 255, 0.445);
+.brano-name {
+    height: 50%;
+    /* border: 1px solid rgba(0, 110, 255, 0.445); */
 }
 
 .side img {
     height: 100%;
+}
+
+/* CENTRAL */
+.low-box,
+.up-box {
+    height: 30%;
+}
+
+.up-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-box .fas {
+    font-size: 15px;
+    color: white;
+    margin: 0px 10px;
+}
+
+.fa-play-circle {
+    font-size: 30px;
+    color: white;
+    margin: 0px 20px;
+
+}
+
+.low-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time {
+    flex-basis: 5%;
+    margin: 0px 20px;
+}
+
+/* player */
+.player {
+    flex-basis: 90%;
+    background-color: grey;
+}
+
+.line {
+    background: rgb(255, 255, 255);
+    width: 30%;
+    height: 5px;
+}
+
+/* RIGHT SIDE */
+.player-right {
+    flex-basis: 50%;
+    background-color: grey;
+}
+
+.icons-right i {
+    color: white;
+    margin-right: 2px;
 }

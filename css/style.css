@@ -17,17 +17,18 @@ body {
 
 .box-nav li,
 .main-nav-box li {
-    list-style: none;
-    color: rgb(160, 160, 160);
+    /* list-style: none; */
     font-size: 14px;
 }
 
-.box-nav li a {
+.box-nav li a,
+.main-nav-box li a {
     text-decoration: none;
     color: grey;
 }
 
-.box-nav li a:hover {
+.box-nav li a:hover,
+.main-nav-box li a:hover {
     color: white;
 }
 
@@ -154,11 +155,14 @@ h2 {
 .main-nav-box li {
     display: inline-block;
     padding: 5px 10px;
-    /* border: 1px solid greenyellow; */
 }
 
-.main-nav-box li a:hover {
-    color: white;
+.main-nav-box a {
+    border-bottom: 2px solid rgba(172, 255, 47, 0);
+}
+
+.main-nav-box a:hover {
+    border-bottom: 2px solid rgb(172, 255, 47);
 }
 
 /* ALBUM */
@@ -208,7 +212,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
 }
 
 footer h4,
@@ -219,13 +223,8 @@ footer h5 {
 
 /* ITEM FOOTER */
 .central {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     flex-basis: 40%;
-    /* border: 1px solid rgba(255, 123, 0, 0.445); */
-    height: 100%;
+    border: 1px solid rgba(255, 123, 0, 0.445);
 }
 .side {
     flex-basis: 200px;
@@ -254,9 +253,8 @@ footer h5 {
 }
 
 .up-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    background-color: rgb(109, 255, 80);
 }
 
 .up-box .fas {
@@ -276,11 +274,13 @@ footer h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(229, 255, 80);
 }
 
 .time {
     flex-basis: 5%;
     margin: 0px 20px;
+    background-color: rgb(241, 20, 20);
 }
 
 /* player */

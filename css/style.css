@@ -203,7 +203,7 @@ h2 {
 
 .Albums {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     /* background-color: rgba(255, 0, 255, 0.267); */
 
 }
@@ -225,11 +225,27 @@ h2 {
 }
 
 .box-img-album {
-    /* border: 1px solid rgb(5, 255, 26); */
+    position: relative;
+}
+
+.item-row:hover .box-img-album::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border-radius: 50%; */
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.item-row:hover .circle-box-img::after {
+    border-radius: 50%;
 }
 
 .box-img-album img {
     width: 100%;
+    display: block;
 }
 
 .circle-img {

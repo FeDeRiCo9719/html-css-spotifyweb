@@ -22,10 +22,13 @@ body {
     font-size: 14px;
 }
 
-.box-nav li:hover,
-.main-nav-box li:hover {
+.box-nav li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.box-nav li a:hover {
     color: white;
-    cursor: pointer;
 }
 
 h4 {
@@ -48,7 +51,7 @@ h2 {
 
     width: 230px;
     height: calc(100vh - 100px);
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     background-color: rgb(12, 11, 14);
 }
 
@@ -65,8 +68,6 @@ h2 {
 .box-nav li i {
     font-size: 25px;
     margin-right: 10px;
-    vertical-align: middle;
-    /* background-color: red; */
 }
 
 .overflow {
@@ -74,14 +75,18 @@ h2 {
 }
 
 .box-nav li {
-    margin: 20px 0px;
-    /* border: 1px solid yellow; */
-    vertical-align: middle;
+    margin: 17px 0px;
+    border-left: 3px solid rgba(255, 255, 0, 0);
+    padding: 0px 20px;
+}
+
+.box-nav li:hover {
+    border-left: 3px solid greenyellow;
 }
 
 .playlist {
     /* border: 1px solid red; */
-    margin: 40px 0px;
+    margin: 40px 20px;
     font-size: 18px;
 }
 
@@ -91,6 +96,10 @@ h2 {
     background-color: grey;
     padding: 10px;
     margin-right: 10px;
+}
+
+.account {
+    margin: 0px 20px;
 }
 
 .user-box {
@@ -146,6 +155,10 @@ h2 {
     display: inline-block;
     padding: 5px 10px;
     /* border: 1px solid greenyellow; */
+}
+
+.main-nav-box li a:hover {
+    color: white;
 }
 
 /* ALBUM */

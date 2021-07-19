@@ -66,22 +66,30 @@ h2 {
     width: 120px;
 }
 
+.box-nav li {
+    margin: 15px 0px;
+    /* padding: 10px 0px; */
+}
+
 .box-nav li i {
     font-size: 25px;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 .overflow {
     overflow-y: auto;
 }
 
-.box-nav li {
-    margin: 17px 0px;
+.box-nav li a {
+    padding: 10px 17px;
     border-left: 3px solid rgba(255, 255, 0, 0);
-    padding: 0px 20px;
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+    vertical-align: middle;
 }
 
-.box-nav li:hover {
+.box-nav li a:hover {
     border-left: 3px solid greenyellow;
 }
 
@@ -224,7 +232,7 @@ footer h5 {
 /* ITEM FOOTER */
 .central {
     flex-basis: 40%;
-    border: 1px solid rgba(255, 123, 0, 0.445);
+    /* border: 1px solid rgba(255, 123, 0, 0.445); */
 }
 .side {
     flex-basis: 200px;
@@ -254,7 +262,8 @@ footer h5 {
 
 .up-box {
     text-align: center;
-    background-color: rgb(109, 255, 80);
+    /* background-color: rgb(109, 255, 80); */
+    margin-bottom: 5px;
 }
 
 .up-box .fas {
@@ -274,13 +283,13 @@ footer h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(229, 255, 80);
+    /* background-color: rgb(229, 255, 80); */
 }
 
 .time {
     flex-basis: 5%;
     margin: 0px 20px;
-    background-color: rgb(241, 20, 20);
+    /* background-color: rgb(241, 20, 20); */
 }
 
 /* player */

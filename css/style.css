@@ -22,7 +22,6 @@ body {
 }
 
 .box-nav li a,
-.main-nav-box li a,
 .account-box a,
 .playlist a {
     text-decoration: none;
@@ -47,8 +46,17 @@ h2 {
     color: white;
 }
 
+h5 {
+    color: rgb(168, 168, 168);
+}
+
+.Albums h5 {
+    color: lightgray;
+}
+
 .Albums p {
     padding: 10px;
+    color: lightgray;
 }
 
 
@@ -105,24 +113,23 @@ h2 {
     font-size: 18px;
 }
 
-.playlist a {
-    border: 1px solid red;
-    padding: 10px 0px;
-}
-
 .create {
     background-color: grey;
-    padding: 5px 5px;
+    padding: 8px 0px;
     text-align: center;
-    margin-right: 5px;
+    margin-right: 12px;
 }
 
 .create i {
     font-size: 20px;
     color: black;
+    padding: 5px;
+    padding-left: 10px;
 }
 
-.playlist i:hover {}
+.playlist a:hover span {
+    background-color: white;
+}
 
 /*-- low nav --*/
 .account {
@@ -130,7 +137,17 @@ h2 {
 }
 
 .user-box {
-    /* border: 1px solid red; */
+    margin: 5px 0px;
+}
+
+.user-box h4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-box i {
+    font-size: 30px;
+    vertical-align: middle;
 }
 
 .account-box {
@@ -138,8 +155,8 @@ h2 {
     border-bottom: 1px solid grey;
 }
 
-.account-box a i {
-    margin-right: 5px;
+.account i {
+    margin-right: 8px;
 }
 
 /*---------------------- MAIN ----------------------*/
@@ -148,7 +165,7 @@ h2 {
     height: calc(100vh - 100px);
     padding: 0px 20px;
     overflow-y: auto;
-    background-image: linear-gradient(to bottom right, rgb(27, 88, 79),rgb(31, 31, 31));
+    background-image: linear-gradient(to bottom right, rgb(98, 192, 75),rgb(0, 97, 92));
 }
 
 /* BUTTON UPGRADE */
@@ -195,6 +212,10 @@ h2 {
 .main-nav-box a {
     padding-bottom: 5px;
     border-bottom: 2px solid rgba(172, 255, 47, 0);
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    /* color: lightgray; */
+    font-weight: 600;
 }
 
 .main-nav-box a:hover {
@@ -210,7 +231,7 @@ h2 {
 
 .Albums {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     /* background-color: rgba(255, 0, 255, 0.267); */
 
 }
@@ -229,6 +250,7 @@ h2 {
     width: calc(100% / 6);
     padding: 0px 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .box-img-album {
@@ -381,7 +403,7 @@ footer h5 {
     /* border: 1px solid yellow; */
 }
 
-/* ------------- TABLET - responsive ------------- */
+/* --------------> 1100 - responsive ------------- */
 @media screen and (max-width: 1100px) {
 /* RESET */
     *{
@@ -397,7 +419,7 @@ footer h5 {
 
 
 
-/* ------------- TABLET - responsive ------------- */
+/* --------------> 768 - responsive ------------- */
 @media screen and (max-width: 768px) {
 /* RESET */
     *{
@@ -411,7 +433,7 @@ footer h5 {
     }
 }
 
-/* ------------- TABLET - responsive ------------- */
+/* --------------> 600 - responsive ------------- */
 @media screen and (max-width: 600px) {
 /* RESET */
     *{
@@ -419,8 +441,33 @@ footer h5 {
      padding: 0%;
      box-sizing: border-box;
     }
-    
-    .item-row {
-        width: 100%;
+
+    .main-box,
+    .box-upgrade {
+        width: calc(100% - 50px);
     }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .main-nav-box li {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .item-row {
+        width: calc(100% / 2);
+    }
+
+    .sidebar {
+        width: 80px;
+    }
+
+    .nav-aside,
+    .account {
+        display: none;
+    }
+
+
 }
